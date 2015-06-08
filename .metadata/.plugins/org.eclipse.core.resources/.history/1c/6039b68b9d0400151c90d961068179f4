@@ -1,0 +1,10 @@
+package br.com.aulajava2.aulas;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.CharConversionException;;
+
+public class Arquivos3
+{
+	
+}

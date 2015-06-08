@@ -1,0 +1,73 @@
+package aulajava1;
+
+import java.util.Scanner;
+
+public class EX01 {
+	
+	//private static Scanner ler;
+
+	public static void main(String[] args)
+	{
+		byte cont = 1, cont2 = 1;
+		int escolha;
+		String texto;
+		
+		Scanner ler = new Scanner(System.in);
+		//Scanner palavra = new Scanner(System.in);
+		
+		System.out.print("Meu primeiro exemplo em java!");
+		
+		//usando o cast
+		byte b1 = 127, b2 = 127, b3;
+		b3 = (byte) (b1 + b2);
+		System.out.println("\t\nNúmero convertido para byte: " + b3);
+		
+		for(byte i = 1; i <= 10; i++ )
+		{
+			System.out.print(" " + i);
+			System.out.print("\"");
+		}
+		System.out.println("\n");
+		
+		while (cont <= 10)
+		{
+			System.out.print(" " + cont);
+			cont++;
+		}
+		System.out.println("\n");
+
+		do
+		{
+			System.out.print(" " + cont2);
+			cont2++;
+		} while(cont2 <= 10);
+		System.out.println("\n");
+		
+		System.out.print("Insira um valor: ");
+		escolha = ler.nextInt();
+		
+		switch (escolha)
+		{
+		case 1:
+			System.out.println("Valor escolhido: 1");
+			break;
+		
+		case 2:
+			System.out.println("Valor escolhido: 2");
+			break;
+		
+		default:
+			System.out.println("O valor informado não existe!");
+			break;
+		}
+		System.out.println("\n");
+		System.out.print("Insira uma palavra: ");
+		while (ler.hasNext())
+		{
+			texto = ler.next();
+			System.out.println("Token:" + texto.next());
+		}
+		ler.close();
+
+	}
+}

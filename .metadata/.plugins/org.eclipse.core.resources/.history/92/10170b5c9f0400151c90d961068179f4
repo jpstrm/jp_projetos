@@ -1,0 +1,9 @@
+package br.com.aulajava2.aulas;
+
+public class ProgLerTexto {
+	
+	public static void main (String[] args)
+	{
+		File arquivo = new File("D:\\Dropbox\\Documentos\\cursos\\Curso completo de Java\\Aula de Arquivos.txt")
+	}
+}

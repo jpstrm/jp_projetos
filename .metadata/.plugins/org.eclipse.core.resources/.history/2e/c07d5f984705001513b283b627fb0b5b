@@ -1,0 +1,7 @@
+package aulaJava_1;
+
+public class ConceitosOO {
+
+			String texto = "Estou escrevendo um texo para que\nvai ser gravado usando a biblioteca BufferedWriter";
+
+}

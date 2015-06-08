@@ -1,0 +1,31 @@
+package br.com.aulajava2.lertexto;
+
+import java.io.File;
+
+public class ProgCopiaBinario
+{
+	public static void main(String[] args)
+	{
+		File entrada = new File("D:\\Dropbox\\Documentos\\cursos\\Curso completo de Java\\Costa Rican Frog.jpg");
+		File saida = new File("D:\\Dropbox\\Documentos\\cursos\\Curso completo de Java\\Copia Costa Rican Frog.jpg");
+		
+		System.out.println("Iniciando a cópia...");
+		try
+		{
+			for(int cont =0; cont < 3; cont++)
+			{
+				System.out.print(".");
+				for(int cont2 = 0; cont2 < 3; cont2++)
+				{
+					System.out.print("");
+				}
+			}
+			CopiarBinario.copia(entrada, saida);
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		System.out.println("Cópia realizada com sucesso!");
+	}
+}
