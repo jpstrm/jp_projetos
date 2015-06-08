@@ -1,0 +1,34 @@
+package br.com.aulajava2.aulas;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Teste {
+	public static void main(String args[])
+	{
+		String n1, n2, oper;
+		double numero1, numero2, resultado;
+		numero1 = Double.parseDouble(n1);
+		numero2 = Double.parseDouble(n2);
+		numero1 = JOptionPane.showInputDialog("Insira um valor: ");
+		oper = JOptionPane.showInputDialog("Informe a operação: ");
+		numero2 = JOptionPane.showInputDialog("Insira o segundo valor: ");
+		
+		if ("+".equals(oper)) {
+			resultado = n1 + n2;
+			System.out.println("\nResultado: " + resultado);
+		} else if ("-".equals(oper)) {
+			resultado = n1 - n2;
+			System.out.println("\nResultado: " + resultado);
+		} else if ("*".equals(oper)) {
+			resultado = n1 * n2;
+			System.out.println("\nResultado: " + resultado);
+		} else if ("/".equals(oper)) {
+			resultado = n1 / n2;
+			System.out.println("O resultado é: " + resultado);
+		}
+		
+	}
+
+}

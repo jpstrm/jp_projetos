@@ -1,0 +1,17 @@
+package br.com.aulajava2.lertexto.buffer;
+
+import java.io.File;
+
+public class ProgBuffer
+{
+	public static void main(String[] args)
+	{
+		File entrada = new File("D:\\Dropbox\\Documentos\\cursos\\Curso completo de Java\\Aula de Arquivos.txt");
+		File saida = new File("D:\\Dropbox\\Documentos\\cursos\\Curso completo de Java\\CópiaSaidaBuffer.txt");
+		//String texto = "Estou escrevendo um texo para que\nvai ser gravado usando a biblioteca BufferedWriter";
+		
+		String s = LendoBuffer.ler(entrada);
+		CriaTextoBuffer.escreve(saida, s);
+		
+	}
+}

@@ -1,0 +1,8 @@
+package br.com.aulajava2.lertexto;
+
+import java.io.File;
+
+public class CopiaArqTexto2
+{
+	
+}

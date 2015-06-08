@@ -1,0 +1,20 @@
+package br.com.aulajava2.aulas;
+
+import javax.swing.JOptionPane;
+
+public class TratandoExcecoes2 
+{
+	public static void main (String[] args)
+	{
+		int x = 20, y = 0, z;
+		
+		try
+		{
+			x = x / y;
+		}
+		catch (Exception erro)
+		{
+			JOptionPane.showMessageDialog(null,	erro);
+		}
+	}
+}

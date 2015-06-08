@@ -1,0 +1,11 @@
+package br.com.aulajava2.aulas;
+
+import java.io.File;
+
+public class Arquivos2
+{
+	public static void main (String[] args)
+	{
+		System.out.println("Separador de Path: " + File.pathSeparator);
+	}
+}
